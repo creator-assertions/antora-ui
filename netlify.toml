@@ -1,0 +1,3 @@
+[build]
+publish = "build"
+command = "npm install && gulp bundle && ls -al build"
