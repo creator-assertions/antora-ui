@@ -94,6 +94,17 @@
   position: relative;
 }
 
+.nav-menu-cai-logo {
+  background: transparent url(../img/logo-cai-white.svg) no-repeat center / 100% 100%;
+  border: none;
+  float: left;
+  height: 3em;
+  width: 6em;
+  margin-right: 0;
+  outline: none;
+  padding: 0.25em 0.5em 0.25em 0;
+}
+
 .nav-menu-toggle {
   background: transparent url(../img/octicons-16.svg#view-unfold) no-repeat center / 100% 100%;
   border: none;
