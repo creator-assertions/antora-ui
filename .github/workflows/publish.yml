@@ -1,0 +1,81 @@
+name: Publish to GitHub Pages
+
+on:
+  push:
+    branches:
+    - main
+    - local
+  workflow_dispatch:
+
+concurrency:
+  group: github-pages
+  cancel-in-progress: false
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+ 
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v4
+      with:
+        fetch-depth: 0
+
+    - name: Install Node.js
+      uses: actions/setup-node@v4
+      with:
+        node-version: '20'
+
+    - name: Install gulp and friends
+      run: npm install
+
+    - name: Generate UI framework (local)
+      run: git checkout local && gulp bundle && mv build/ui-bundle.zip .git/ui-bundle-local.zip
+
+    - name: Generate UI framework (primary)
+      run: git checkout main && gulp bundle
+
+    - name: Unhide the local bundle
+      run: mv .git/ui-bundle-local.zip build/ui-bundle-local.zip && ls -al build
+
+    - name: Disable Jekyll
+      run: touch .nojekyll
+
+    - name: Upload Artifacts
+      uses: actions/upload-pages-artifact@v3
+      with:
+        path: ./build
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+  
+    steps:
+    - name: Deploy to GitHub Pages
+      id: deployment
+      uses: actions/deploy-pages@v4
+
+    - name: Trigger creator-assertions.github.io publish
+      uses: actions/github-script@v7
+      with:
+        github-token: ${{ secrets.PUBLISH_TOKEN }}
+        script: |
+            await github.rest.actions.createWorkflowDispatch({
+              owner: 'creator-assertions',
+              repo: 'creator-assertions.github.io',
+              workflow_id: 'publish.yml',
+              ref: 'main'
+            })
