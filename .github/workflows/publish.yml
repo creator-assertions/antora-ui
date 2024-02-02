@@ -39,10 +39,13 @@ jobs:
       run: npm install
 
     - name: Generate UI framework (local)
-      run: git checkout local && gulp bundle && mv build/ui-bundle.zip build/ui-bundle-local.zip
+      run: git checkout local && gulp bundle && mv build/ui-bundle.zip .git/ui-bundle-local.zip
 
     - name: Generate UI framework (primary)
       run: git checkout main && gulp bundle
+
+    - name: Unhide the local bundle
+      run: mv .git/ui-bundle-local.zip build/ui-bundle-local.zip && ls -al build
 
     - name: Disable Jekyll
       run: touch .nojekyll
