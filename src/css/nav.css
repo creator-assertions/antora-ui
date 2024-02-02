@@ -281,3 +281,7 @@
   opacity: 0.9;
   font-weight: var(--body-font-weight-bold);
 }
+
+.nav-panel-explore .component a[href="index.html"] {
+  display: none;
+}
