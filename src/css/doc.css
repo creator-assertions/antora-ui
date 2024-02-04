@@ -62,7 +62,7 @@
   padding: 0.5rem 1rem;
 }
 
-.doc h2:not(.discrete) {
+.doc h2 {
   border-bottom: 1px solid var(--section-divider-color);
   margin-left: -1rem;
   margin-right: -1rem;
