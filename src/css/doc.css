@@ -32,7 +32,7 @@
 }
 
 .doc h5 {
-  font-size: 1rem; /* [scouten 2024-06-13]: Override browser default style sheet */
+  font-size: 95%; /* [scouten 2024-06-13]: Override browser default style sheet */
 }
 
 .doc > h1.page:first-child {
