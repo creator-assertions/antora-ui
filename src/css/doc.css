@@ -70,7 +70,8 @@
 }
 
 .doc h3:not(.discrete),
-.doc h4:not(.discrete) {
+.doc h4:not(.discrete),
+.doc h5:not(.discrete) { /* scouten [2024-06-13]: Added h5 to this list */
   font-weight: var(--alt-heading-font-weight);
 }
 
