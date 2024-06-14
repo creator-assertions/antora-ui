@@ -31,6 +31,10 @@
   margin: 1rem 0;
 }
 
+.doc h5 {
+  font-size: 1rem; /* [scouten 2024-06-13]: Override browser default style sheet */
+}
+
 .doc > h1.page:first-child {
   font-size: calc(36 / var(--rem-base) * 1rem);
   margin: 1.5rem 0;
