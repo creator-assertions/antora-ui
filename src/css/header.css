@@ -34,8 +34,11 @@ body {
 }
 
 .navbar-brand .navbar-item:first-child {
+  /* [scouten 2024-07-09]: Add CAWG logo */
+  background: url(../img/cawg-logo-white.svg) no-repeat left;
   align-self: center;
-  padding: 0;
+  padding: 0 0 0 2.2em; /* [scouten 2024-07-09]: Add CAWG logo */
+  height: 4em; /* [scouten 2024-07-09]: Add CAWG logo */
   font-size: calc(22 / var(--rem-base) * 1rem);
   flex-wrap: wrap;
   line-height: 1;
