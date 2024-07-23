@@ -36,8 +36,9 @@
 }
 
 .doc h6 {
-  font-size: 95%; /* [scouten 2024-07-23]: Override browser default style sheet */
-  font-style: italic;
+  font-size: 90%; /* [scouten 2024-07-23]: Override browser default style sheet */
+  font-weight: bold;
+  color: #ccc;
 }
 
 .doc > h1.page:first-child {
