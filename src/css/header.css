@@ -29,10 +29,6 @@ body {
   padding-left: 1rem;
 }
 
-.navbar-brand .navbar-item {
-  color: var(--navbar-font-color);
-}
-
 .navbar-brand .navbar-dif-logo {
   background: url(../img/dif-logo-white.png) no-repeat left;
   background-size: 82%;
@@ -49,6 +45,7 @@ body {
 .navbar-brand .navbar-item {
   background: url(../img/cawg-logo-white.svg) no-repeat left;
   align-self: center;
+  color: var(--navbar-font-color);
   padding: 6px 0 0 2.2em;
   height: 4em;
   font-size: calc(22 / var(--rem-base) * 1rem);
