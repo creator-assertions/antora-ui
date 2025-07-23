@@ -12,6 +12,10 @@
   z-index: var(--z-index-toolbar);
 }
 
+body.-toolbar .toolbar {
+  display: none;
+}
+
 .toolbar a {
   color: inherit;
 }
