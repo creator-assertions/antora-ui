@@ -1,8 +1,20 @@
 body.home {
+  position: relative;
+}
+
+body.home::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 500px;
+  height: 500px;
   background-image: url(../img/cawg-logo-black.svg);
   background-size: 500px 500px;
   background-position: top left;
   background-repeat: no-repeat;
+  opacity: 0.25;
+  z-index: -1;
 }
 
 @media screen and (min-width: 1024px) {
