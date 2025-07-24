@@ -5,12 +5,12 @@ body.home {
 body.home::before {
   content: "";
   position: absolute;
-  top: 5rem;
-  left: 2rem;
-  width: 500px;
-  height: 500px;
+  top: 7rem;
+  left: 1.5rem;
+  width: 450px;
+  height: 450px;
   background-image: url(../img/cawg-logo-black.svg);
-  background-size: 500px 500px;
+  background-size: 450px 450px;
   background-position: top left;
   background-repeat: no-repeat;
   opacity: 0.1;
