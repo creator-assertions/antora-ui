@@ -3,17 +3,13 @@
   align-items: center;
   background-color: var(--toolbar-background);
   box-shadow: 0 1px 0 var(--toolbar-border-color);
-  display: flex;
+  display: none; /* CAWG override from display: flex; */
   font-size: calc(15 / var(--rem-base) * 1rem);
   height: var(--toolbar-height);
   justify-content: flex-start;
   position: sticky;
   top: var(--navbar-height);
   z-index: var(--z-index-toolbar);
-}
-
-body.-toolbar .toolbar {
-  display: none;
 }
 
 .toolbar a {
