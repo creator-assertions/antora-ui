@@ -1,14 +1,9 @@
-/* Import Roboto Slab from Google Fonts as fallback */
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;300;400;500;600;700&display=swap');
+/* Import Roboto Slab from Google Fonts as fallback - only 100 weight (thin) */
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100&display=swap');
 
 /* Fallback: Try @fontsource first if available, then Google Fonts */
-/* Uncomment these when @fontsource/roboto-slab is installed:
+/* Uncomment this when @fontsource/roboto-slab is installed:
 @import "~@fontsource/roboto-slab/100.css";
-@import "~@fontsource/roboto-slab/300.css";
-@import "~@fontsource/roboto-slab/400.css";
-@import "~@fontsource/roboto-slab/500.css";
-@import "~@fontsource/roboto-slab/600.css";
-@import "~@fontsource/roboto-slab/700.css";
 */
 
 /*
