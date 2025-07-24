@@ -58,6 +58,7 @@ body.-title h1.page {
 
 .doc .tagline-large {
   background: #eee;
+  border: #ddd 1px;
   border-radius: 1em;
   margin: 1em;
   padding: 1em;
