@@ -58,10 +58,10 @@ body.-title h1.page {
 
 .doc .tagline-large {
   background: #eee;
-  border: #ddd 1px;
-  border-radius: 1em;
+  border: #ccc 1px;
+  border-radius: 0.8em;
   margin: 1em;
-  padding: 1em;
+  padding: 0.8em 1em;
   font-family: "Roboto Slab", serif;
   font-weight: 100;
   font-size: 150%;

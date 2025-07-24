@@ -5,7 +5,7 @@ body.home {
 body.home::before {
   content: "";
   position: absolute;
-  top: 7rem;
+  top: 10rem;
   left: 1.5rem;
   width: 450px;
   height: 450px;
