@@ -206,7 +206,7 @@ body.-left-nav .nav-container {
   color: var(--nav-muted-color);
   box-shadow: 0 -1px 0 var(--nav-panel-divider-color);
   padding: 0 0.5rem;
-  display: flex;
+  display: none; /* CAWG override from display: flex; */
   align-items: center;
   justify-content: space-between;
   line-height: 1;
