@@ -3,7 +3,7 @@
   <head>
 {{> head defaultPageTitle='Untitled'}}
   </head>
-  <body class="article{{#with (or page.attributes.role page.role)}} {{{this}}}{{/with}}{{#if (eq page.module.name "meeting-notes") -left-nav{{/if}}}}">
+  <body class="article{{#with (or page.attributes.role page.role)}} {{{this}}}{{/with}}{{#if (eq page.module.name "meeting-notes")}} -left-nav{{/if}}">
 {{> header}}
 {{> body}}
 {{> footer}}
