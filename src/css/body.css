@@ -5,8 +5,8 @@ body.home {
 body.home::before {
   content: "";
   position: absolute;
-  top: 4rem;
-  left: 4rem;
+  top: 5rem;
+  left: 2rem;
   width: 500px;
   height: 500px;
   background-image: url(../img/cawg-logo-black.svg);
