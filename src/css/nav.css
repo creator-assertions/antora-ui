@@ -14,7 +14,8 @@
   visibility: hidden;
 }
 
-body.-left-nav .nav-container, body.module-meeting-notes .nav-container {
+body.-left-nav .nav-container,
+body.module-meeting-notes .nav-container {
   visibility: hidden;
 }
 
