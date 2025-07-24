@@ -2,7 +2,7 @@ body.home {
   position: relative;
 }
 
-body.home::before {
+body.cawg-logo::before {
   content: "";
   position: absolute;
   top: 10.5rem;
