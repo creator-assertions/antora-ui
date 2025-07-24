@@ -1,3 +1,10 @@
+body.home {
+  background-image: url(../img/cawg-logo-black.svg);
+  background-size: 500px 500px;
+  background-position: top left;
+  background-repeat: no-repeat;
+}
+
 @media screen and (min-width: 1024px) {
   .body {
     display: flex;
