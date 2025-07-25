@@ -1,7 +1,3 @@
-body.home {
-  position: relative;
-}
-
 body.cawg-logo::before {
   content: "";
   position: absolute;

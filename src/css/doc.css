@@ -56,16 +56,6 @@ body.-title h1.page {
   display: none;
 }
 
-.doc .tagline-large {
-  background: #eee;
-  border-radius: 0.8em;
-  margin: 1.5em 0 !important;
-  padding: 0.8em 1em;
-  font-family: "Roboto Slab", serif;
-  font-weight: 100;
-  font-size: 150%;
-}
-
 .doc > h1.page:first-child + aside.toc.embedded {
   margin-top: -0.5rem;
 }
