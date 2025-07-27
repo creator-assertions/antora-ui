@@ -147,22 +147,6 @@ body {
   padding: 0.5rem 1rem;
 }
 
-.navbar-end .navbar-item {
-  margin-top: 0.55em;
-}
-
-.navbar-item.navbar-item-home {
-  padding-left: 2em;
-  background: url(../img/home-white.svg) no-repeat left !important;
-  background-size: 27% !important;
-}
-
-.navbar-item.navbar-item-home:hover {
-  padding-left: 2em;
-  background: black url(../img/home-white.svg) no-repeat left !important;
-  background-size: 27% !important;
-}
-
 .navbar-item.has-dropdown {
   padding: 0;
 }
