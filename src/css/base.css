@@ -45,15 +45,6 @@ pre {
   font-family: var(--monospace-font-family);
 }
 
-code {
-  border: 1px solid #ddd;
-  border-radius: 4px;
-}
-
-pre code {
-  border: none;
-}
-
 b,
 dt,
 strong,
