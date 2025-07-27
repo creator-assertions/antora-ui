@@ -62,7 +62,7 @@
   padding: 0.5rem 1rem;
 }
 
-.doc h2 {
+.doc h2:not(.discrete) {
   border-bottom: 1px solid var(--section-divider-color);
   margin-left: -1rem;
   margin-right: -1rem;
@@ -70,8 +70,7 @@
 }
 
 .doc h3:not(.discrete),
-.doc h4:not(.discrete),
-.doc h5:not(.discrete) { /* scouten [2024-06-13]: Added h5 to this list */
+.doc h4:not(.discrete) {
   font-weight: var(--alt-heading-font-weight);
 }
 
