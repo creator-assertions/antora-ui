@@ -28,17 +28,7 @@
   font-weight: var(--heading-font-weight);
   hyphens: none;
   line-height: 1.3;
-  margin: 1rem 0;
-}
-
-.doc h5 {
-  font-size: 95%; /* [scouten 2024-06-13]: Override browser default style sheet */
-}
-
-.doc h6 {
-  font-size: 90%; /* [scouten 2024-07-23]: Override browser default style sheet */
-  font-weight: bold;
-  color: #555;
+  margin: 1rem 0 0;
 }
 
 .doc > h1.page:first-child {
